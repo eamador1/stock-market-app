@@ -3,10 +3,10 @@ import {
 } from 'react-router-dom';
 import './App.css';
 import HomePage from './pages/HomePage';
-import Euronext from './pages/Euronext';
-import LondonExchange from './pages/LondonExchange';
-import Nasdaq from './pages/Nasdaq';
-import Hke from './pages/Hke';
+import Euronext from './pages/EuronextPage';
+import LondonExchange from './pages/LondonExchangePage';
+import Nasdaq from './pages/NasdaqPage';
+import Hke from './pages/HkePage';
 
 function App() {
   return (

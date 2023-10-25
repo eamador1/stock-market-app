@@ -12,7 +12,6 @@ const HomePage = () => {
     { title: 'NASDAQ', image: nasdaq, path: 'nasdaq' },
     { title: 'LONDON STOCK EXCHANGE', image: LondonStockExchange, path: 'london-exchange' },
     { title: 'HONG KONG EXCHANGE & CLEARING', image: hke, path: 'hke' },
-
   ];
 
   return (

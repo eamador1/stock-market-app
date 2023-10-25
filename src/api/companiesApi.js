@@ -5,10 +5,12 @@ const URL_COMPANIES = 'https://financialmodelingprep.com/api/v3/stock/list?apike
 const fetchCompanies = createAsyncThunk('companies/fetchCompanies', async () => {
   const response = await fetch(URL_COMPANIES);
   const data = await response.json();
+  console.log('Received data:', data);
   return data.map((company) => ({
     symbol: company.symbol,
     name: company.name,
     price: company.price,
+    exchangeShortName: company.exchangeShortName,
   }));
 });
 

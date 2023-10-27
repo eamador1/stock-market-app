@@ -28,7 +28,7 @@
 
 # 📖 [STOCK MARKET APP] <a name="about-project"></a>
 
-**STOCK MARKET APP** It fetches information from Financial Modeling Prep and list the companies in the stock market according to their stock exchange. For practical reasons, at this moment, only companies starting with letter A in the EURONEXT Exchange Market are showing app. In the home page, we have a list of exchange markets, once you click on one of them, a list of companies corresponding to that exchange market will appear, and for more information you can click on one of the options or use the search bar.
+**STOCK MARKET APP** It fetches information from Financial Modeling Prep and list the companies in the stock market according to their stock exchange. For practical reasons, at this moment, only companies starting with letter A in the EURONEXT Exchange Market are showing up. In the home page, we have a list of exchange markets, once you click on one of them, a list of companies corresponding to that exchange market will appear. and To obtain detailed information on the company, you can click on one of the options.
 
 ## 🛠 Built With <a name="built-with"></a>
 

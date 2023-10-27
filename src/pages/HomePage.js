@@ -22,7 +22,7 @@ const HomePage = () => {
   return (
     <div className="wrapper">
       <header>
-        <h1>Stock Wizard</h1>
+        <h1>Stock Market Wizard</h1>
       </header>
       <section>
         <div className="menuContainer">

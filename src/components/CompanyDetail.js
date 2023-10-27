@@ -16,18 +16,18 @@ const Detail = () => {
       </div>
       <div className="adjuster">
         <div className="content-container">
-          <h1>
+          <h1 className="symbolItem">
             {data[id].symbol}
           </h1>
-          <h2>
+          <h2 className="nameItem">
             {data[id].name}
           </h2>
-          <h3>
+          <h3 className="currencyItem">
             Currency:
             {' '}
             {data[id].currency}
           </h3>
-          <h3>
+          <h3 className="exchangeItem">
             Stock Exchange:
             { ' ' }
             {data[id].stockExchange}

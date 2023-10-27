@@ -13,6 +13,8 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+    - [🚀 Live Demo](#live-demo)
+    - [🎥 Video Presentation] (#Presentation)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -55,6 +57,9 @@
 
 - [Live Demo Link](https://eamador1-stock-market.netlify.app)
 
+ ## 🎥 Video Presentation <a name="video-presentation"></a>
+
+ -[Video Link](https://www.loom.com/share/43ba684ddf2f4ad8b04f7ae4686ac38d?sid=973f0ab3-94f3-4681-bceb-51a8e412c32f)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 

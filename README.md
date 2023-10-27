@@ -135,4 +135,6 @@ I would like to thank my colleagues at Microverse for their support during the p
 
 This project is [MIT](./LICENSE) licensed.
 
+The design of this project is an idea of Nelson Sakwa on Behance and it is under the license of Creative Commons. You can learn more about it in the following link: https://creativecommons.org/licenses/by-nc/4.0/deed.en
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

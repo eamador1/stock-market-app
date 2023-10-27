@@ -54,10 +54,11 @@ body {
   border-radius: 4px;
   width: 50vw;
   height: 5vh;
+  text-indent: 10px;
 }
 
 .inputName::placeholder {
-  padding-left: 10%;
+  padding-left: 10px;
 }
 
 .companyContainer3 {
@@ -66,17 +67,25 @@ body {
 
 .oneCompanyContainer {
   padding-left: 5%;
-  padding-top: 1vh;
+  padding-top: 0;
+  margin-top: 0;
   padding-bottom: 1vh;
 }
 
 .oneCompanyContainer:nth-child(odd) {
   background-color: #a34368;
-  padding-top: 1vh;
 }
 
 .oneCompanyContainer:nth-child(even) {
   background-color: #ce5281;
+}
+
+.oneCompanyContainer:nth-child(odd):hover {
+  background-color: #aa0a48;
+}
+
+.oneCompanyContainer:nth-child(even):hover {
+  background-color: #ef79a6;
 }
 
 .symbol {
@@ -88,23 +97,28 @@ body {
   display: flex;
   flex-direction: column;
   width: 70vw;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .right {
   display: flex;
   justify-content: end;
   width: 90vw;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .name {
   color: #fff;
-  width: 70vw;
+  width: 80vw;
 }
 
 @media (min-width: 768px) {
   .inputName {
     width: 20vw;
     height: 4vh;
+    text-indent: 10px;
   }
 
   .exchange {

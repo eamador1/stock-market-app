@@ -1,29 +1,11 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import fetchCompanies from '../api/companiesApi';
-import { selectCompaniesByExchange } from '../redux/companies/companiesSlice';
+import React from 'react';
+import Euronext from '../components/Euronext';
 
-const Euronext = () => {
-  const companies = useSelector(selectCompaniesByExchange('Euronext'));
-  const dispatch = useDispatch();
-  // const options = useSelector((state) => state.options);
-
-  useEffect(() => {
-    if (companies.length === 0) {
-      dispatch(fetchCompanies());
-    }
-  }, [dispatch, companies]);
-
+function DisplayEuronext() {
   return (
-    <div>
-      {companies.map((company) => (
-        <div key={company.symbol}>
-          {company.name}
-          {company.price}
-        </div>
-      ))}
-    </div>
+    <>
+      <Euronext />
+    </>
   );
-};
-
-export default Euronext;
+}
+export default DisplayEuronext;

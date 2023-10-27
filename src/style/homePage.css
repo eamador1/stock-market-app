@@ -33,7 +33,7 @@ h1 {
 .menuItem {
   font-family: 'Lato', sans-serif;
   padding-top: 5vh;
-  justify-self: center;
+  justify-content: center;
   color: #ffff;
   text-decoration: none;
   height: 20vh;

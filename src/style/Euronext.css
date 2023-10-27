@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;500;600;700;800&family=Roboto:ital,wght@0,400;0,500;0,700;1,700&display=swap');
+
+:root {
+  background-color: #f36099;
+}
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.wrapper {
+  padding-bottom: 20vh;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-top: 2vh;
+}
+
+.loadingImage {
+  width: 90px;
+  display: flex;
+  padding-left: 48vw;
+  padding-top: 3vh;
+}
+
+.exchange {
+  color: #ffff;
+  font-family: 'Proza Libre', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  margin-left: 20vw;
+}
+
+.headerCompanies {
+  display: flex;
+  justify-content: center;
+  padding: 3vh 0 3vh 0;
+  color: #ffff;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+}
+
+.inputName {
+  border: none;
+  border-radius: 4px;
+  width: 50vw;
+  height: 5vh;
+}
+
+.inputName::placeholder {
+  padding-left: 10%;
+}
+
+.companyContainer3 {
+  display: flex;
+}
+
+.oneCompanyContainer {
+  padding-left: 5%;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.oneCompanyContainer:nth-child(odd) {
+  background-color: #a34368;
+  padding-top: 1vh;
+}
+
+.oneCompanyContainer:nth-child(even) {
+  background-color: #ce5281;
+}
+
+.symbol {
+  color: #fff;
+  width: 60vw;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+}
+
+.right {
+  display: flex;
+  justify-content: end;
+  width: 90vw;
+}
+
+.name {
+  color: #fff;
+  width: 70vw;
+}
+
+@media (min-width: 768px) {
+  .inputName {
+    width: 20vw;
+    height: 4vh;
+  }
+
+  .exchange {
+    padding-left: 22vw;
+  }
+
+  .symbol {
+    width: 10vw;
+  }
+
+  .name {
+    width: 20vw;
+  }
+
+  .left {
+    width: 95vw;
+  }
+
+  .right {
+    width: 90vw;
+  }
+}

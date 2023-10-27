@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders without crashing Euronext should render correctly 1`] = `null`;
+
+exports[`Renders without crashing Home should render correctly 1`] = `null`;
+
+exports[`Renders without crashing should render correctly 1`] = `
+<section
+  className="wrapper"
+>
+  <div
+    className="headerContainer"
+  >
+    <a
+      className="exit"
+      href="/"
+      onClick={[Function]}
+    >
+      <svg
+        className="w-6 h-6"
+        fill="none"
+        stroke="#ffffff"
+        strokeWidth="1.5"
+        viewBox="0 0 24 24"
+        width="2em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M15.75 19.5L8.25 12l7.5-7.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    </a>
+    <h3
+      className="exchange"
+    >
+      EURONEXT
+    </h3>
+  </div>
+  <div
+    className="search-bar"
+  >
+    <input
+      className="inputName"
+      onChange={[Function]}
+      placeholder="Company's Symbol ..."
+      type="text"
+    />
+  </div>
+  <div
+    className="headerCompanies"
+  >
+    <h2>
+      COMPANIES
+    </h2>
+  </div>
+  <div
+    className="data"
+  />
+</section>
+`;

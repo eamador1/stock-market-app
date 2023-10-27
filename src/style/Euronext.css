@@ -91,6 +91,7 @@ body {
 .symbol {
   color: #fff;
   width: 60vw;
+  font-family: 'Roboto', sans-serif;
 }
 
 .left {
@@ -112,6 +113,7 @@ body {
 .name {
   color: #fff;
   width: 80vw;
+  font-family: 'Roboto', sans-serif;
 }
 
 @media (min-width: 768px) {

@@ -20,6 +20,13 @@
   padding-bottom: 2vh;
 }
 
+.nameItem,
+.symbolItem,
+.currencyItem,
+.exchangeItem {
+  font-family: 'Roboto', sans-serif;
+}
+
 .adjuster {
   height: 30vh;
   padding-top: 30vh;

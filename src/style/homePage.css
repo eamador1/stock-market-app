@@ -3,21 +3,23 @@
 header {
   background-color: #f36099;
 }
+
 h1 {
   margin-bottom: 0;
 }
+
 .menuContainer {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: repeat(8,1fr);
+  grid-template-rows: repeat(8, 1fr);
   height: 90vh;
 }
 
 .menuItem {
-font-family: 'Lato', sans-serif;
-padding-top: 5vh;
-justify-self: center;
-color: #ffff;
+  font-family: 'Lato', sans-serif;
+  padding-top: 5vh;
+  justify-self: center;
+  color: #ffff;
 }
 
 .imageContainer {
@@ -44,5 +46,5 @@ img {
 }
 
 .menuItem:last-child {
-    grid-area: 2/2/3/3;
-  }
+  grid-area: 2/2/3/3;
+}

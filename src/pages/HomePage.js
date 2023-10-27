@@ -6,7 +6,7 @@ import nasdaq from '../images/nasdaq.png';
 import euronext from '../images/euronext.jpeg';
 import nyse from '../images/nyse.png';
 import nse from '../images/nse.png';
-import '../style/HomePage.css';
+import '../style/homePage.css';
 
 const HomePage = () => {
   const options = [

@@ -1,38 +1,41 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { createSelector } from 'reselect';
 import fetchCompanies from '../../api/companiesApi';
+
+export const initialState = {
+  data: [],
+  id: 0,
+  error: '',
+  isLoading: false,
+  search: '',
+};
 
 export const companiesSlice = createSlice({
   name: 'companies',
-  initialState: {
-    companies: [],
-    status: 'idle',
-    error: null,
+  initialState,
+  reducers: {
+    getId: (state, action) => {
+      state.id = action.payload;
+    },
+    setSearch: (state, action) => ({ ...state, search: action.payload }),
   },
-  reducers: {},
   extraReducers: (builder) => {
     builder
       .addCase(fetchCompanies.pending, (state) => {
-        state.status = 'loading';
+        state.isLoading = true;
       })
       .addCase(fetchCompanies.fulfilled, (state, action) => {
-        state.status = 'succeeded';
-        state.companies = action.payload;
+        state.isLoading = false;
+        state.data = action.payload;
+        state.data.forEach((item) => {
+          item.id = state.data.indexOf(item);
+        });
       })
-      .addCase(fetchCompanies.rejected, (state, action) => {
-        state.status = 'fail';
-        state.error = action.error.message;
+      .addCase(fetchCompanies.rejected, (state) => {
+        state.isLoading = false;
+        state.error = 'Data not available';
       });
   },
 });
 
-export const selectAllCompanies = (state) => state.companies.companies;
-
-export const selectCompaniesByExchange = (exchangeShortName) => createSelector(
-  [selectAllCompanies],
-  (allCompanies) => allCompanies.filter(
-    (company) => company.exchangeShortName === exchangeShortName,
-  ).slice(0, 10),
-);
-
+export const { getId, setSearch } = companiesSlice.actions;
 export default companiesSlice.reducer;

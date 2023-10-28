@@ -5,15 +5,6 @@ exports[`Renders without crashing Euronext should render correctly 1`] = `
   className="wrapper"
 >
   <div
-    className="headerContainer"
-  >
-    <h3
-      className="exchange"
-    >
-      EURONEXT
-    </h3>
-  </div>
-  <div
     className="search-bar"
   >
     <input
@@ -40,7 +31,9 @@ exports[`Renders without crashing Euronext should render correctly 1`] = `
   <div
     className="headerCompanies"
   >
-    <h2>
+    <h2
+      className="companiesHeader"
+    >
       COMPANIES
     </h2>
   </div>
@@ -55,15 +48,6 @@ exports[`Renders without crashing should render correctly 1`] = `
   className="wrapper"
 >
   <div
-    className="headerContainer"
-  >
-    <h3
-      className="exchange"
-    >
-      EURONEXT
-    </h3>
-  </div>
-  <div
     className="search-bar"
   >
     <input
@@ -76,7 +60,9 @@ exports[`Renders without crashing should render correctly 1`] = `
   <div
     className="headerCompanies"
   >
-    <h2>
+    <h2
+      className="companiesHeader"
+    >
       COMPANIES
     </h2>
   </div>

@@ -29,9 +29,6 @@ const Home = () => {
 
   return (
     <section className="wrapper">
-      <div className="headerContainer">
-        <h3 className="exchange">EURONEXT</h3>
-      </div>
       <div className="search-bar">
         <input className="inputName" type="text" placeholder="Company's Symbol ..." onChange={(e) => handleSearch(e)} />
       </div>
@@ -43,7 +40,7 @@ const Home = () => {
       )}
       {error && <p className="">{error}</p>}
       <div className="headerCompanies">
-        <h2>COMPANIES</h2>
+        <h2 className="companiesHeader">COMPANIES</h2>
       </div>
       <div className="stockInfoContainer">
         {data

@@ -9,28 +9,26 @@ const Detail = () => {
   return (
     <div className="detailWrapper">
       <div className="cross-container">
-        <Link to="/euronext" className="exit">
+        <Link to="/" className="exit">
           <SvgBack alt="exit" />
         </Link>
         <h3 className="infoHeader">COMPANYS INFO</h3>
       </div>
       <div className="adjuster">
         <div className="content-container">
-          <h1 className="symbolItem">
-            {data[id].symbol}
-          </h1>
-          <h2 className="nameItem">
-            {data[id].name}
-          </h2>
-          <h3 className="currencyItem">
-            Currency:
+          <h1>{data[id].symbol}</h1>
+          <h2>{data[id].name}</h2>
+          <h3>
+            Price:&nbsp;
+            $
             {' '}
-            {data[id].currency}
+            {data[id].price}
           </h3>
-          <h3 className="exchangeItem">
-            Stock Exchange:
-            { ' ' }
-            {data[id].stockExchange}
+          <h3>
+            {data[id].exchange}
+          </h3>
+          <h3>
+            {data[id].exchangeShortName}
           </h3>
         </div>
       </div>

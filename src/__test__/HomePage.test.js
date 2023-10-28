@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 import renderer from 'react-test-renderer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import store from '../redux/store';
-import Euronext from '../components/Euronext';
+import HomePage from '../components/Home';
 import Detail from '../components/CompanyDetail';
 
 describe('Renders without crashing', () => {
@@ -11,7 +11,7 @@ describe('Renders without crashing', () => {
     const tree = renderer.create(
       <Provider store={store}>
         <BrowserRouter>
-          <Euronext />
+          <HomePage />
         </BrowserRouter>
       </Provider>,
     ).toJSON();
@@ -23,8 +23,8 @@ describe('Renders without crashing', () => {
       <Provider store={store}>
         <BrowserRouter>
           <Routes>
-            <Route path="/euronext" element={<Euronext />} />
-            <Route path="/euronext/:content" element={<Detail />} />
+            <Route path="/" element={<HomePage />} />
+            <Route path="/homepage/:content" element={<Detail />} />
           </Routes>
         </BrowserRouter>
       </Provider>,

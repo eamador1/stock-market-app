@@ -25,8 +25,13 @@ body {
 .loadingImage {
   width: 90px;
   display: flex;
+  flex-direction: column;
   padding-left: 48vw;
   padding-top: 3vh;
+}
+
+.loading {
+  width: 30vw;
 }
 
 .exchange {
@@ -61,6 +66,12 @@ body {
   padding-left: 10px;
 }
 
+.stockInfoContainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+}
+
 .companyContainer3 {
   display: flex;
 }
@@ -72,32 +83,49 @@ body {
   padding-bottom: 1vh;
 }
 
-.oneCompanyContainer:nth-child(odd) {
+.oneCompanyContainer:nth-child(4n-3) {
   background-color: #a34368;
 }
 
-.oneCompanyContainer:nth-child(even) {
+.oneCompanyContainer:nth-child(4n) {
+  background-color: #a34368;
+}
+
+.oneCompanyContainer:nth-child(4n-1) {
   background-color: #ce5281;
 }
 
-.oneCompanyContainer:nth-child(odd):hover {
+.oneCompanyContainer:nth-child(4n-2) {
+  background-color: #ce5281;
+}
+
+.oneCompanyContainer:nth-child(4n-3):hover {
   background-color: #aa0a48;
 }
 
-.oneCompanyContainer:nth-child(even):hover {
+.oneCompanyContainer:nth-child(4n):hover {
+  background-color: #aa0a48;
+}
+
+.oneCompanyContainer:nth-child(4n-1):hover {
+  background-color: #ef79a6;
+}
+
+.oneCompanyContainer:nth-child(4n-2):hover {
   background-color: #ef79a6;
 }
 
 .symbol {
   color: #fff;
-  width: 60vw;
+  width: 60%;
   font-family: 'Roboto', sans-serif;
 }
 
 .left {
   display: flex;
   flex-direction: column;
-  width: 70vw;
+  align-items: center;
+  width: 100%;
   margin-top: 0;
   padding-top: 0;
 }
@@ -105,41 +133,41 @@ body {
 .right {
   display: flex;
   justify-content: flex-end;
-  width: 90vw;
+  width: 90%;
   margin-top: 0;
   padding-top: 0;
 }
 
-.name {
+.price {
   color: #fff;
-  width: 80vw;
+  width: 60%;
   font-family: 'Roboto', sans-serif;
 }
 
 @media (min-width: 768px) {
   .inputName {
-    width: 20vw;
+    width: 20%;
     height: 4vh;
     text-indent: 10px;
   }
 
   .exchange {
-    padding-left: 22vw;
+    padding-left: 22%;
   }
 
   .symbol {
-    width: 10vw;
+    width: 30%;
   }
 
-  .name {
-    width: 20vw;
+  .price {
+    width: 30%;
   }
 
   .left {
-    width: 95vw;
+    width: 95%;
   }
 
   .right {
-    width: 90vw;
+    width: 90%;
   }
 }

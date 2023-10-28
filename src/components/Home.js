@@ -4,11 +4,10 @@ import { useSelector, useDispatch } from 'react-redux';
 import fetchCompanies from '../api/companiesApi';
 import { getId, setSearch } from '../redux/companies/companiesSlice';
 import logo from '../images/logo.png';
-import SvgBack from '../imageComponent/back';
 import '../style/Euronext.css';
 import SvgForward from '../imageComponent/forward';
 
-const Euronext = () => {
+const Home = () => {
   const {
     isLoading, error, data,
   } = useSelector((state) => state.home);
@@ -30,26 +29,20 @@ const Euronext = () => {
 
   return (
     <section className="wrapper">
-      <div className="headerContainer">
-        <Link to="/" className="exit">
-          <SvgBack alt="exit" />
-        </Link>
-        <h3 className="exchange">EURONEXT</h3>
-      </div>
       <div className="search-bar">
         <input className="inputName" type="text" placeholder="Company's Symbol ..." onChange={(e) => handleSearch(e)} />
       </div>
       {isLoading && (
       <div className="loadingImage">
         <img src={logo} className="App-logo" alt="logo" />
-        <h2> Loading ...</h2>
+        <h2 className="loading"> Loading ...</h2>
       </div>
       )}
       {error && <p className="">{error}</p>}
       <div className="headerCompanies">
-        <h2>COMPANIES</h2>
+        <h2 className="companiesHeader">COMPANIES</h2>
       </div>
-      <div className="data">
+      <div className="stockInfoContainer">
         {data
             && data
               .filter((list) => {
@@ -67,14 +60,12 @@ const Euronext = () => {
                     </div>
                     <div className="left">
                       <p className="symbol">
-                        Symbol:
-                        { ' ' }
                         {item.symbol}
                       </p>
-                      <p className="name">
-                        Name:
-                        { ' ' }
-                        {item.name}
+                      <p className="price">
+                        $
+                        {' '}
+                        {item.price}
                       </p>
                     </div>
 
@@ -86,4 +77,4 @@ const Euronext = () => {
   );
 };
 
-export default Euronext;
+export default Home;

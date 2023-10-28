@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders without crashing Euronext should render correctly 1`] = `
+<section
+  className="wrapper"
+>
+  <div
+    className="headerContainer"
+  >
+    <h3
+      className="exchange"
+    >
+      EURONEXT
+    </h3>
+  </div>
+  <div
+    className="search-bar"
+  >
+    <input
+      className="inputName"
+      onChange={[Function]}
+      placeholder="Company's Symbol ..."
+      type="text"
+    />
+  </div>
+  <div
+    className="loadingImage"
+  >
+    <img
+      alt="logo"
+      className="App-logo"
+      src="logo.png"
+    />
+    <h2
+      className="loading"
+    >
+       Loading ...
+    </h2>
+  </div>
+  <div
+    className="headerCompanies"
+  >
+    <h2>
+      COMPANIES
+    </h2>
+  </div>
+  <div
+    className="stockInfoContainer"
+  />
+</section>
+`;
+
+exports[`Renders without crashing should render correctly 1`] = `
+<section
+  className="wrapper"
+>
+  <div
+    className="headerContainer"
+  >
+    <h3
+      className="exchange"
+    >
+      EURONEXT
+    </h3>
+  </div>
+  <div
+    className="search-bar"
+  >
+    <input
+      className="inputName"
+      onChange={[Function]}
+      placeholder="Company's Symbol ..."
+      type="text"
+    />
+  </div>
+  <div
+    className="headerCompanies"
+  >
+    <h2>
+      COMPANIES
+    </h2>
+  </div>
+  <div
+    className="stockInfoContainer"
+  />
+</section>
+`;
